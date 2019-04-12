@@ -1,0 +1,5 @@
+---
+queue: "default"
+clients:
+  queuesvc: "http://192.168.50.5:6001"
+  logsvc: "http://192.168.50.5:6002"

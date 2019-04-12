@@ -1,0 +1,22 @@
+auth:
+  no_modify: false # turn off all UI control of the management plane
+  no_submit: false # block submits through the UI
+  no_auth: true
+  github_token: "@GITHUB_TOKEN@" # required in no_auth mode
+  # key for session encryption -- automatically generated in demo
+  session_crypt_key: "@SESSION_CRYPT_KEY@"
+  # key for github token encryption -- bytes in hex format
+  token_crypt_key: 1234567123456712345671234567123456712345671234567888888812345678
+clients:
+  logsvc: 'localhost:6005'
+  datasvc: 'localhost:6000'
+  queuesvc: 'localhost:6001'
+  assetsvc: 'localhost:6002'
+services:
+  last_scanned_wait: 1h
+websockets:
+  insecure_websockets: true
+db: 'host=localhost database=tinyci user=tinyci password=tinyci'
+hook_url: '@UI_ENDPOINT@/hook'
+url: '@UI_ENDPOINT@'
+log_requests: true

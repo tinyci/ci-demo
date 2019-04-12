@@ -1,0 +1,6 @@
+{
+   "proto" : "http",
+   "addr" : "192.168.50.5:3000",
+   "name" : "tinyci-hook",
+   "bind_tls" : "true"
+}

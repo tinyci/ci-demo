@@ -1,0 +1,11 @@
+*.log
+runner/*.log
+master/*.log
+.vagrant
+runner/.vagrant
+runner/overlay-runner
+runner/*.yml
+runner/*.yaml
+*.tar.gz
+*.yaml
+tunnel.json
