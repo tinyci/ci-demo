@@ -15,18 +15,20 @@ The following need to be placed in the top level directory of this repo before g
 The services.yaml file also needs to be placed at the top level.
 The following template can be used:
 ```
+---
 auth:
-  no_auth: false
   session_crypt_key: 1234567123456712345671234567123456712345671234567888888812345678
+  token_crypt_key: 1234567123456712345671234567123456712345671234567888888812345678
 oauth:
-  client_id: "github client id"
-  client_secret: "github client token"
-  redirect_url: "http://fqdn-address:3000/uisvc/login"
+  # see https://github.com/settings/developers to set up oauth credentials
+  client_id: "client id"
+  client_secret: "client secret"
+  redirect_url: "http://192.168.50.5:3000/uisvc/login"
 clients:
-  datasvc: 'http://localhost:6000'
-  queuesvc: 'http://localhost:6001'
-  logsvc: 'http://localhost:6002'
-  uisvc: 'http://localhost:6010'
+  datasvc: 'localhost:6000'
+  queuesvc: 'localhost:6001'
+  logsvc: 'localhost:6002'
+  uisvc: 'localhost:6010'
 services:
   last_scanned_wait: 1m
 websockets:
