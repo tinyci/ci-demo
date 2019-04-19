@@ -53,7 +53,7 @@ The internal URL (http://192.168.50.5:3000) should be used when accessing tinyCI
 
 Once all the dependencies are in place, run the following script:
 ```
-./provision_vms.sh
+make provision
 ```
 
 tinyCI should be up and accessible via the URL defined in services.yaml.
