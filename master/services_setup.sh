@@ -13,6 +13,7 @@ sudo mkdir -p $TINYCI_CONFIG_DIR
 cd $TINYCI_BIN_DIR
 sudo tar --strip-components=1 binaries -xpf /vagrant/release.tar.gz
 sudo cp /vagrant/services.yaml $TINYCI_CONFIG_DIR/
+sudo cp /vagrant/master/hooksvc.yaml.tmpl $TINYCI_CONFIG_DIR/hooksvc.yaml
 sudo chown -R root:root $TINYCI_DIR
 (
 	mkdir $TINYCI_TEMPORARY_DIRECTORY || true
