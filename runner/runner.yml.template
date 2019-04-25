@@ -1,5 +1,6 @@
 ---
 queue: "default"
 clients:
-  queuesvc: "http://192.168.50.5:6001"
-  logsvc: "http://192.168.50.5:6002"
+  queuesvc: "192.168.50.5:6001"
+  assetsvc: "192.168.50.5:6002"
+  logsvc: "192.168.50.5:6005"

@@ -22,7 +22,7 @@ StartLimitIntervalSec=0
 Type=simple
 Restart=always
 RestartSec=1
-User=vagrant
+User=root
 ExecStart=/var/tinyci/bin/overlay-runner -config /etc/tinyci/runner.yml
 WorkingDirectory=/var/tinyci/bin/
 
