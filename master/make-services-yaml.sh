@@ -9,7 +9,7 @@ then
   echo >&2 "Otherwise, press ^C to discontinue."
   echo >&2
   echo >&2 "NOTE: the demo does not cover OAuth Installations: please consult"
-  echo >&2 "with http://docs.tinyci.org on how to set up a OAuth instance."
+  echo >&2 "with http://tinyci.org on how to set up a OAuth instance."
   read GITHUB_TOKEN
 fi
 
@@ -19,7 +19,7 @@ then
   echo >&2 "so that github can reach it."
   echo >&2 "Note that in a production installation, that the UI and hook"
   echo >&2 "services can be deployed independently and do not suffer this limitation. See"
-  echo >&2 "http://docs.tinyci.org for more."
+  echo >&2 "http://tinyci.org for more."
   echo >&2
 
   read UI_ENDPOINT
