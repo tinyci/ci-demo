@@ -26,8 +26,12 @@ Firstly, setup an [oauth account](https://github.com/settings/developers). Make 
 * Run `make setup`.
 * Assuming `make setup` succeeds, run `make start`.
 
+Your UI will be @ https://192.168.42.2. Be sure to accept the cert!
+
 If you want a really quick start and want to see the jobs run:
 
+* First, click the "Upgrade button" in the UI: this is in the hamburger menu at
+  the top left... The arrow at the bottom.
 * Fork `tinyci/ci-ui` (a few small jobs) or `tinyci/ci-agents` (lots of jobs).
 * In the UI, add this fork with the "Add" button on the hamburger
   menu/repository list.
