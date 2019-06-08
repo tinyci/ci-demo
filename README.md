@@ -4,11 +4,15 @@ This repository contains the vagrant demo for tinyCI. It, by default, runs one
 instance of the tinyCI VM for UI and other services, and another for a docker
 runner (overlay-runner). You can customize it to run multiple runners.
 
+This demo only works on Linux and OS X.
+
 Before anything, you need the following tools installed and operational:
 
 * VirtualBox
 * Vagrant 
 * Ansible
+
+Additionally, `mkcert` will be downloaded using the system's `curl` tool.
 
 Firstly, setup an [oauth account](https://github.com/settings/developers). Make it look like this:
 
