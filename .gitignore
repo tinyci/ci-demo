@@ -1,0 +1,4 @@
+/.vagrant
+/*.log
+/*.tar.gz
+/customize.rb

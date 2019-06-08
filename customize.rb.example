@@ -1,0 +1,33 @@
+# vim: ft=ruby
+#
+# The following *must be changed*
+#
+
+# OAuth client credentials retrieved from https://github.com/settings/developers
+OAUTH_CLIENT_ID     = "<client id>"
+OAUTH_CLIENT_SECRET = "<client secret>"
+
+# YOUR GITHUB USERNAME -- not mine
+GITHUB_USERNAME     = "erikh"
+
+#
+# The rest are optional tweaks.
+#
+
+# submit to launch the machines under. The tinyci instance will be at
+# 192.168.42.2 in this case.
+SUBNET = "192.168.42"
+
+#
+# hosts start at .2 and perpetuate forward incrementally. Each role is as follows:
+#
+# - tinyci: agents, ui and other miscellany to provide the service
+# - postgres: postgres DB, for now must reside on same host as tinyci
+# - runners: runner agents, must *not* reside on same host as tinyci
+#
+HOSTS = [ 
+  { tinyci: ["tinyci", "postgres"] },
+  # replicate the following line and rename the "runner" key to make more
+  # runners.
+  { runner: ["runners"] },
+]

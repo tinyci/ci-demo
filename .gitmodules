@@ -1,0 +1,3 @@
+[submodule "ci-deploy"]
+	path = ci-deploy
+	url = https://github.com/tinyci/ci-deploy
