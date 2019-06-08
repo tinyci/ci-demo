@@ -6,7 +6,7 @@ runner (overlay-runner). You can customize it to run multiple runners.
 
 Firstly, setup an [oauth account](https://github.com/settings/developers). Make it look like this:
 
-<center><img width="240" src="github-oauth-settings.png" /></center>
+<center><img width="640" src="github-oauth-settings.png" /></center>
 
 * Clone this repository.
 * Get a copy of the release as `release.tar.gz`, and put it at the root of this
