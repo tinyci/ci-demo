@@ -12,7 +12,7 @@ Before anything, you need the following tools installed and operational:
 * Vagrant 
 * Ansible
 
-Additionally, `mkcert` will be downloaded using the system's `curl` tool.
+Additionally, [mkcert](https://github.com/FiloSottile/mkcert) will be downloaded using the system's `curl` tool.
 
 Firstly, setup an [oauth account](https://github.com/settings/developers). Make it look like this:
 
