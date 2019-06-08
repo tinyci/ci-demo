@@ -34,7 +34,7 @@ If you want a really quick start and want to see the jobs run:
 
 * First, click the "Upgrade button" in the UI: this is in the hamburger menu at
   the top left... The arrow at the bottom.
-* Fork `tinyci/ci-ui` (a few small jobs) or `tinyci/ci-agents` (lots of jobs).
+* Fork [tinyci/ci-ui](https://github.com/tinyci/ci-ui) (a few small jobs) or [tinyci/ci-agents](https://github.com/tinyci/ci-agents) (lots of jobs).
 * In the UI, add this fork with the "Add" button on the hamburger
   menu/repository list.
 * Then, "Submit" the repository's master branch using the UI element at the top
