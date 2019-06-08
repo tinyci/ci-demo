@@ -8,9 +8,11 @@ This demo only works on Linux and OS X.
 
 Before anything, you need the following tools installed and operational:
 
-* VirtualBox
-* Vagrant 
+* [VirtualBox](https://virtualbox.org)
+* [Vagrant](https://vagrantup.com)
 * Ansible
+  * OS X: `brew install ansible` (via [homebrew](https://brew.sh))
+  * Ubuntu: `apt-get install ansible`
 
 Additionally, [mkcert](https://github.com/FiloSottile/mkcert) will be downloaded using the system's `curl` tool.
 
