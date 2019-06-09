@@ -11,3 +11,6 @@ stop:
 	vagrant destroy -f || :
 
 restart: stop start
+
+provision:
+	vagrant provision
