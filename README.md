@@ -35,7 +35,7 @@ If you want a really quick start and want to see the jobs run:
 * Click "Add to CI".
 * Click the "people" icon to upgrade your oauth token to one that can run CI jobs. This will refresh the page after success.
 * Then, click the "cloud" icon to scan your repositories.
-* Fork [tinyci/ci-ui](https://github.com/tinyci/ci-ui) (a few small jobs) or [tinyci/ci-agents](https://github.com/tinyci/ci-agents) (lots of jobs).
+* Fork [tinyci/ci-runners](https://github.com/tinyci/ci-runners) (a few small jobs) or [tinyci/ci-agents](https://github.com/tinyci/ci-agents) (lots of jobs).
 * After that, you can search for your fork and click the `+` symbol to move forward with adding your hook and allowing submissions.
 * Then, "Submit" the repository's master branch using the UI element at the top
   of the web page.
