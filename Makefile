@@ -1,5 +1,8 @@
-setup: reset
+setup: reset download
 	bash make/setup.sh	
+
+download:
+	bash make/download.sh
 
 reset:
 	bash make/reset.sh

@@ -21,8 +21,11 @@ Firstly, setup an [oauth account](https://github.com/settings/developers). Make 
 <center><img width="640" src="github-oauth-settings.png" /></center>
 
 * Clone this repository.
-* Get a [copy of the release](https://github.com/tinyci/tinyci/releases/) and
-  name it `release.tar.gz`, and put it at the root of this repository's clone.
+* Get a release. Either:
+  1. Run `make download` to get a recommended version of the release
+  1. Get a [copy of the release](https://github.com/tinyci/tinyci/releases/)
+     and name it `release.tar.gz`, and put it at the root of this repository's
+     clone.
 * Create a `customize.rb` from the sample file. Be sure to include the client
   values from the oauth creation step above!
 * Run `make setup`.
