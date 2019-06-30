@@ -8,7 +8,7 @@ OAUTH_CLIENT_ID     = "<client id>"
 OAUTH_CLIENT_SECRET = "<client secret>"
 
 # YOUR GITHUB USERNAME -- not mine
-GITHUB_USERNAME     = "erikh"
+GITHUB_USERNAME     = "<github username>"
 
 #
 # The rest are optional tweaks.
@@ -25,7 +25,7 @@ SUBNET = "192.168.42"
 # - postgres: postgres DB, for now must reside on same host as tinyci
 # - runners: runner agents, must *not* reside on same host as tinyci
 #
-HOSTS = [ 
+HOSTS = [
   { tinyci: ["tinyci", "postgres"] },
   # replicate the following line and rename the "runner" key to make more
   # runners.
