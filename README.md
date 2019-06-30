@@ -20,18 +20,28 @@ Firstly, setup an [oauth account](https://github.com/settings/developers). Make 
 
 <center><img width="640" src="github-oauth-settings.png" /></center>
 
+* You need to change the following configuration details:
+  * The application name is **tinyci-demo**
+  * The homepage URL is **https://192.168.42.2**
+  * The authorization callback URL is **https://192.168.42.2/uisvc/login**
 * Clone this repository.
 * Get a release. Either:
   1. Run `make download` to get a recommended version of the release
   1. Get a [copy of the release](https://github.com/tinyci/tinyci/releases/)
      and name it `release.tar.gz`, and put it at the root of this repository's
      clone.
-* Create a `customize.rb` from the sample file. Be sure to include the client
-  values from the oauth creation step above!
+* Create a `customize.rb` from the sample file.  You should only need to change three things:
+  * Replace **&lt;client id&gt;** with the value obtained above
+  * Replace **&lt;client secret&gt;** with the value obtained above
+  * Replace **&lt;github username&gt;** with **your** github username
 * Run `make setup`.
 * Assuming `make setup` succeeds, run `make start`.
 
-Your UI will be @ https://192.168.42.2. Be sure to accept the cert!
+You will be asked to enter a password during this process.  Enter your system password.
+
+Your UI will be @ https://192.168.42.2. Be sure to accept the cert if prompted!
+
+If `make start` fails for some reason, you can run `make restart` after correcting any errors.
 
 If you want a really quick start and want to see the jobs run:
 
