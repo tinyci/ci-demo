@@ -2,6 +2,6 @@
 
 set -e
 
-echo "Downloading 0.1.0-prerelease, please be patient..."
+echo "Downloading 0.1.1, please be patient..."
 
-curl -SLo release.tar.gz https://github.com/tinyci/tinyci/releases/download/0.1.0-prerelease/tinyci-0.1.0-prerelease.tar.gz
+curl -SLo release.tar.gz https://github.com/tinyci/tinyci/releases/download/0.1.1/tinyci-0.1.1.tar.gz
