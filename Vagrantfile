@@ -39,9 +39,11 @@ Vagrant.configure("2") do |config|
       if i == (HOSTS.length - 1)
         node.vm.provision "ansible" do |a|
           a.groups = { }
+          a.host_vars = {}
 
           HOSTS.each do |h|
-            h.each do |k,v|
+            h.each_with_index do |(k,v), x|
+              a.host_vars[k] = { "runner_name" => "%s-%d" % [k, x] }
               v.each do |value|
                 a.groups[value] ||= []
                 a.groups[value].push(k)
