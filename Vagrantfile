@@ -23,7 +23,7 @@ Vagrant.configure("2") do |config|
     config.vm.define role do |node|
       # Every Vagrant development environment requires a box. You can search for
       # boxes at https://vagrantcloud.com/search.
-      node.vm.box = "ubuntu/bionic64"
+      node.vm.box = "ubuntu/disco64"
 
       node.vm.network "private_network", ip: getip(i)
       node.vm.hostname = role
